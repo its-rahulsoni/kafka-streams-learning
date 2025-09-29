@@ -26,7 +26,7 @@ public class OrderProducer {
         );
 
         Order order = new Order();
-        order.setOrder_id(36);
+        order.setOrder_id(37);
         order.setCustomer_id(2);
         order.setOrder_date("2025-09-29");
         order.setTotal_amount("100.00");
