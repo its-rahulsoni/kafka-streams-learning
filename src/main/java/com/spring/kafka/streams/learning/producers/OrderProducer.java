@@ -26,10 +26,10 @@ public class OrderProducer {
         );
 
         Order order = new Order();
-        order.setOrder_id(37);
+        order.setOrder_id(44);
         order.setCustomer_id(2);
-        order.setOrder_date("2025-09-29");
-        order.setTotal_amount("100.00");
+        order.setOrder_date("2025-08-21");
+        order.setTotal_amount("800.00");
 
         producer.send(new ProducerRecord<>("orders-topic", String.valueOf(order.getOrder_id()), order));
         producer.close();
