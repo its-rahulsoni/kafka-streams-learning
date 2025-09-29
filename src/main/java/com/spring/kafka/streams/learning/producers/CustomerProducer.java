@@ -24,9 +24,9 @@ public class CustomerProducer {
         );
 
         Customer customer = new Customer();
-        customer.setCustomerId("2");
-        customer.setName("Bob");
-        customer.setEmail("bob@example.com");
+        customer.setCustomerId("3");
+        customer.setName("Charlie");
+        customer.setEmail("charlie@example.com");
 
         producer.send(new ProducerRecord<>("customers-topic", String.valueOf(customer.getCustomerId()), customer));
         producer.close();
